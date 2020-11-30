@@ -17,26 +17,26 @@
 
 // Object to store all the possible messages
 const mixedMessage = {
-  presentAction: [
-    "A good way to keep healthy is to eat more Chinese food.",
-    "Hard work pays off in the future. Laziness pays off now.",
-    "If you eat something and no one sees you eat it, it has no calories.",
-    "Never do anything halfway. If y......",
-    "Enjoy yourself while you can.",
+  adjective: [
+    "embarrassed to the bone",
+    "sinister",
+    "pea-brained",
+    "fear-inspiring",
+    "unholy",
   ],
-  futureEvent: [
-    "You will marry a professional athlete - if competetive eating can be considered a sport.",
-    "A new romance is in the future",
-    "I see money in your future... It is not yours though.",
-    "You laugh now, wait till you get home.",
-    "Pigeon poop burns the retina for 13 hours. You will learn this the hard way.",
+  noun: [
+    "rough-skinned newt",
+    "bat-shit crazy Amish folk",
+    "brokenhearted druggie",
+    "chauvinistic pup",
+    "considerate louse",
   ],
-  futureAction: [
-    "I cannot help you, for I am just a cookie.",
-    "Ask not what your fortune cookie can do for you, but what you can do for your fortune cookie.",
-    "If you think we are going to sum up your entire life in this little message you're crazy.",
-    "Three can keep a secret, if you get rid of two",
-    "Run",
+  verb: [
+    "wheedle",
+    "suck in",
+    "medicate",
+    "snoop",
+    "run",
   ],
 };
 
