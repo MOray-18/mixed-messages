@@ -33,10 +33,10 @@ const mixedMessage = {
   ],
   verb: [
     "wheedle",
-    "suck in",
+    "blindside the old lady behind",
     "medicate",
-    "snoop",
-    "run",
+    "trip",
+    "swat",
   ],
 };
 
@@ -49,7 +49,28 @@ const randomMessagePart = (property) =>
 
 // Function to join the three parts together
 const completeMessage = () => {
-  const part1 = randomMessagePart("presentAction");
-  const part2 = randomMessagePart("futureEvent");
-  const part3 = randomMessagePart("futureAction");
+  const finalMessage = [];
+  const keys = Object.keys(mixedMessage);
+  keys.forEach((key) => {
+    switch (key) {
+      case "adjective":
+        finalMessage.push(`Beware a ${randomMessagePart(key)}`);
+        break;
+      case "noun":
+        finalMessage.push(`${randomMessagePart(key)} on your evening stroll.`);
+        break;
+      case "verb":
+        finalMessage.push(
+          `You will have to ${randomMessagePart(
+            key
+          )} them to avoid a very pleasant tragedy!!!`
+        );
+        break;
+      default:
+        console.log("error");
+    }
+  });
+  return finalMessage.join(" ");
 };
+
+console.log(completeMessage());
